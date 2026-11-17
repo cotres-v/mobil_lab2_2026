@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Таблица умножения"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginTop="12dp"
+            android:contentDescription="Таблица умножения от 2 до 9"
+            android:scaleType="fitCenter"
+            android:src="@drawable/multiplication_table" />
+
+        <Button
+            android:id="@+id/allButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="Упражнение для всех чисел" />
+
+        <EditText
+            android:id="@+id/selectedNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Число от 2 до 9"
+            android:inputType="number"
+            android:maxLength="1" />
+
+        <Button
+            android:id="@+id/selectedButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Упражнение выборочно" />
+    </LinearLayout>
+</ScrollView>
